@@ -30,12 +30,4 @@ Graduating in just three weeks, I'm excited to bring strong analytical thinking,
 
 ## Live Demo
 
-[View the live portfolio](https://your-app-name.streamlit.app) 
-
-## Getting Started (Local)
-
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
-streamlit run app.py
+[View the live portfolio](https://brandon-ytuarte-portfolio.streamlit.app/) 
