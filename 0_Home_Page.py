@@ -30,7 +30,7 @@ st.markdown("""
 
   /* Base text */
   html, body, [class*="css"] {
-      color: #e2e8f0;
+      color: #FFFFFF;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
 
@@ -56,7 +56,7 @@ st.markdown("""
       border-radius: 999px;
       border: 1px solid #3a3a3a;
       font-size: 13px;
-      color: #cbd5e1;
+      color: #FFFFFF;
       background: transparent;
       margin: 3px 4px 3px 0;
   }
