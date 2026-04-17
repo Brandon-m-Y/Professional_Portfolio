@@ -12,13 +12,13 @@ st.markdown("""
 <style>
   /* Page background */
   [data-testid="stAppViewContainer"] {
-      background-color: #000000;
+      background: radial-gradient(circle at top left, #3A3A3A 0%, #2F2F2F 45%, #242424 100%);
   }
   [data-testid="stHeader"] {
-      background-color: #000000;
+      background-color: #2B2B2B;
   }
   [data-testid="stSidebar"] {
-      background-color: #0d0d0d;
+      background-color: #262626;
   }
 
   /* Hide Streamlit default top padding */
@@ -30,8 +30,25 @@ st.markdown("""
 
   /* Base text */
   html, body, [class*="css"] {
-      color: #FFFFFF;
+      color: #F5EEDD;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  /* Keep bio text readable in both light/dark themes */
+  [data-testid="stMarkdownContainer"] .bio-text {
+      color: #F5EEDD !important;
+  }
+  .bio-text {
+      font-size: 16px;
+      color: #F5EEDD !important;
+      line-height: 1.8;
+      margin: 0 0 0.25rem;
+  }
+  .secondary-text {
+      background: linear-gradient(180deg, #A39A88 0%, #756E61 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent;
   }
 
   /* ── Avatar ── */
@@ -39,13 +56,13 @@ st.markdown("""
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background-color: #3a5068;
+      background-color: #FFFFFF;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 26px;
       font-weight: 600;
-      color: #a8c7e0;
+      color:#FFFFFF;
       flex-shrink: 0;
   }
 
@@ -54,16 +71,16 @@ st.markdown("""
       display: inline-block;
       padding: 5px 14px;
       border-radius: 999px;
-      border: 1px solid #3a3a3a;
+      border: 1px solid #8A8073;
       font-size: 13px;
-      color: #FFFFFF;
-      background: transparent;
+      color: #F5EEDD;
+      background: #3A3A3A;
       margin: 3px 4px 3px 0;
   }
   .tag-status {
-      background: #1e1e1e;
-      border-color: #333;
-      color: #94a3b8;
+      background: #4A4A4A;
+      border-color: #8A8073;
+      color: #F5EEDD;
   }
 
   /* ── Stat cards ── */
@@ -74,19 +91,24 @@ st.markdown("""
       margin: 1.5rem 0;
   }
   .stat-card {
-      background: #1a1a1a;
+      background: linear-gradient(145deg, #3F3F3F 0%, #343434 100%);
+      border: 1px solid #5A5349;
       border-radius: 12px;
       padding: 1.25rem 1.25rem 1rem;
   }
   .stat-number {
       font-size: 26px;
       font-weight: 600;
-      color: #f1f5f9;
+      color: #F5EEDD;
       margin-bottom: 4px;
   }
   .stat-label {
       font-size: 14px;
-      color: #64748b;
+      background: linear-gradient(180deg, #A39A88 0%, #756E61 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent;
   }
 
   /* ── Section label ── */
@@ -94,7 +116,11 @@ st.markdown("""
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.1em;
-      color: #475569;
+      background: linear-gradient(180deg, #A39A88 0%, #756E61 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent;
       text-transform: uppercase;
       margin-bottom: 0.75rem;
   }
@@ -107,19 +133,24 @@ st.markdown("""
       margin-bottom: 1.5rem;
   }
   .project-card {
-      background: #1a1a1a;
+      background: linear-gradient(145deg, #3F3F3F 0%, #343434 100%);
+      border: 1px solid #5A5349;
       border-radius: 12px;
       padding: 1.1rem 1.25rem;
   }
   .project-title {
       font-size: 15px;
       font-weight: 600;
-      color: #FFFFFF;
+      color: #F5EEDD;
       margin-bottom: 6px;
   }
   .project-desc {
       font-size: 13px;
-      color: #FFFFFF;
+      background: linear-gradient(180deg, #A39A88 0%, #756E61 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent;
       line-height: 1.6;
       margin-bottom: 10px;
   }
@@ -127,7 +158,7 @@ st.markdown("""
   /* ── Divider ── */
   .divider {
       border: none;
-      border-top: 1px solid #1e1e1e;
+      border-top: 1px solid #5A5349;
       margin: 1.5rem 0;
   }
 
@@ -137,13 +168,17 @@ st.markdown("""
       align-items: center;
       gap: 10px;
       font-size: 14px;
-      color: #7ea8cc;
+      background: linear-gradient(180deg, #A39A88 0%, #756E61 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent;
       padding: 8px 0;
-      border-bottom: 1px solid #1a1a1a;
+      border-bottom: 1px solid #4C463E;
       text-decoration: none;
   }
   .link-row:last-child { border-bottom: none; }
-  .link-icon { color: #64748b; flex-shrink: 0; }
+  .link-icon { color: #8A8073 !important; flex-shrink: 0; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -162,10 +197,10 @@ st.markdown(f"""
   <img src="data:image/jpeg;base64,{img}"
        style="border-radius:50%; width:90px; height:90px; object-fit:cover; flex-shrink:0;">
   <div style="padding-top: 6px;">
-    <div style="font-size: 28px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">
+    <div style="font-size: 28px; font-weight: 700; color: #F5EEDD; margin-bottom: 4px;">
       Brandon Ytuarte
     </div>
-    <div style="font-size: 16px; color: #FFFFFF; margin-bottom: 14px;">
+    <div class="secondary-text" style="font-size: 16px; margin-bottom: 14px;">
       Data Scientist &amp; Business Analyst
     </div>
     <div>
@@ -181,7 +216,7 @@ st.markdown(f"""
 
 # ── Bio ────────────────────────────────────────────────────────────────────────
 st.markdown("""
-<p style="font-size: 16px; color: #FFFFFF; line-height: 1.8; margin: 0 0 0.25rem;">
+<p class="bio-text">
 
 My name is Brandon Ytuarte. I am passionate about data science and analytics, and I love building data-driven solutions that help businesses unlock the full potential of their data.
             
