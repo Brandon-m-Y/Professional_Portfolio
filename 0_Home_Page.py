@@ -114,12 +114,12 @@ st.markdown("""
   .project-title {
       font-size: 15px;
       font-weight: 600;
-      color: #f1f5f9;
+      color: #FFFFFF;
       margin-bottom: 6px;
   }
   .project-desc {
       font-size: 13px;
-      color: #64748b;
+      color: #FFFFFF;
       line-height: 1.6;
       margin-bottom: 10px;
   }
@@ -162,10 +162,10 @@ st.markdown(f"""
   <img src="data:image/jpeg;base64,{img}"
        style="border-radius:50%; width:90px; height:90px; object-fit:cover; flex-shrink:0;">
   <div style="padding-top: 6px;">
-    <div style="font-size: 28px; font-weight: 700; color: #f1f5f9; margin-bottom: 4px;">
+    <div style="font-size: 28px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px;">
       Brandon Ytuarte
     </div>
-    <div style="font-size: 16px; color: #94a3b8; margin-bottom: 14px;">
+    <div style="font-size: 16px; color: #FFFFFF; margin-bottom: 14px;">
       Data Scientist &amp; Business Analyst
     </div>
     <div>
@@ -181,7 +181,7 @@ st.markdown(f"""
 
 # ── Bio ────────────────────────────────────────────────────────────────────────
 st.markdown("""
-<p style="font-size: 16px; color: #94a3b8; line-height: 1.8; margin: 0 0 0.25rem;">
+<p style="font-size: 16px; color: #FFFFFF; line-height: 1.8; margin: 0 0 0.25rem;">
 
 My name is Brandon Ytuarte. I am passionate about data science and analytics, and I love building data-driven solutions that help businesses unlock the full potential of their data.
             
