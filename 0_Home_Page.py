@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Brandon Ytuarte",
     page_icon="images/BMY_Logo_cropped 2.jpg",
-    layout="centered",
+    layout="wide",
 )
 
 # ── Force dark background + global styles ─────────────────────────────────────
@@ -25,7 +25,9 @@ st.markdown("""
   .block-container {
       padding-top: 2.5rem;
       padding-bottom: 3rem;
-      max-width: 760px;
+      max-width: 1200px;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
   }
 
   /* Base text */
