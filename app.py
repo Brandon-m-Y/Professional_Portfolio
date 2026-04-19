@@ -20,8 +20,8 @@ credit_page = st.Page("3_Credit _Risk_Modeling.py", title="Credit Risk ML", icon
 job_page = st.Page("4_Python_Data_Job_Analysis_4.py", title="Data Job Analysis", icon="🔬")
 
 # ====================== SIDEBAR NAVIGATION ======================
-st.sidebar.title("Featured Projects")
-st.sidebar.write("Click on a Project below to get started!")
+st.sidebar.title("Featured Projects:")
+st.sidebar.write("Click on a project below to get started!")
 
 # Custom sidebar links using the same Page objects (this fixes the KeyError)
 st.sidebar.page_link(home_page, label="Home")
