@@ -259,57 +259,67 @@ st.markdown("""
 st.markdown("""
 <div class="section-label">Featured Projects</div>
 <div class="project-grid">
+
   <div class="project-card">
     <div class="project-title">MSBA Capstone Project</div>
     <div class="project-desc">
-      End-to-end data analysis project, marketing segmentation, and
-            classification using the Bank Marketing data set from UCI ML Repository.
+      End-to-end ML pipeline on the Bank Marketing dataset (UCI ML Repository).
+      Agglomerative clustering for customer segmentation paired with hyperparameter-tuned
+      binary classification to predict term deposit subscriptions.
     </div>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Python</span>
     <span class="tag" style="font-size:12px; padding:3px 10px;">ML</span>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Agglomerative Clustering</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Streamlit</span>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Classification</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Hyper-Parameter Tuning</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Hyperparameter Tuning</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Streamlit</span>
   </div>
-            
+
   <div class="project-card">
-    <div class="project-title">Project 3 Placeholder</div>
+    <div class="project-title">BMY Analytics — Marketing Segmentation App</div>
     <div class="project-desc">
-      End-to-end data analysis project, marketing segmentation, and
-            classification using the Bank Marketing data set from UCI ML Repository.
+      Privacy-first Streamlit app that turns raw customer data into actionable RFM segments —
+      100% local, no cloud uploads. K-Means with auto elbow detection, PCA visualization,
+      and a guided no-code pipeline from upload to labeled CSV export.
     </div>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Python</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">ML</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Agglomerative Clustering</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">K-Means</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">scikit-learn</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">RFM Analysis</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Plotly</span>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Streamlit</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Classification</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Hyper-Parameter Tuning</span>
-  </div>         
-  
-  <div class="project-card">
-    <div class="project-title">Marketing Segmentation App</div>
-    <div class="project-desc">
-      Interactive Streamlit application for real-time data analysis and marketing segmentation.
-    </div>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Python</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">ML</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Kmeans</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Streamlit</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Data Analysis</span>
   </div>
-            
+
   <div class="project-card">
-    <div class="project-title">Project 4 Placeholder</div>
+    <div class="project-title">Credit Risk Modeling Pipeline</div>
     <div class="project-desc">
-      Interactive Streamlit application for real-time data analysis and marketing segmentation.
+      Production-oriented credit scoring pipeline on the German Credit Risk dataset (1,000
+      applicants). Benchmarks four classifiers with GridSearchCV — XGBoost wins at 66.7%
+      accuracy — deployed as a live Streamlit prediction app.
     </div>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Python</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">ML</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Kmeans</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">XGBoost</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">scikit-learn</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Binary Classification</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">GridSearchCV</span>
     <span class="tag" style="font-size:12px; padding:3px 10px;">Streamlit</span>
-    <span class="tag" style="font-size:12px; padding:3px 10px;">Data Analysis</span>
-  </div>          
+  </div>
+
+  <div class="project-card">
+    <div class="project-title">Python Data Job Market Analysis</div>
+    <div class="project-desc">
+      Python analysis of 2023 US job postings answering four career questions: top skills
+      by role, how skill demand trended across the year, salary distributions by title,
+      and which skills offer the best demand-to-compensation tradeoff.
+    </div>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Python</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">pandas</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">matplotlib</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">seaborn</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">EDA</span>
+    <span class="tag" style="font-size:12px; padding:3px 10px;">Labor Market Analysis</span>
+  </div>
+
 </div>
 
 <hr class="divider">
